@@ -1,0 +1,31 @@
+9. Sentence Transformer Integration
+Objective
+
+Build semantic search engine.
+
+Semantic Search Architecture
+6
+Hands-on Notes
+Install
+pip install sentence-transformers
+Generate Embeddings
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+sentences = [
+    "AI is powerful",
+    "Machine learning is part of AI"
+]
+
+embeddings = model.encode(sentences)
+
+print(embeddings.shape)
+Lab Exercise
+Lab 9 – Semantic Retrieval
+
+Tasks:
+
+Create embeddings
+Compare similarity
+Retrieve nearest documents
