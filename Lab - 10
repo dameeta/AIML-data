@@ -1,0 +1,29 @@
+10. Vector DB Setup
+Objective
+
+Build vector search system.
+
+Hands-on Notes
+Install FAISS
+pip install faiss-cpu
+Store Embeddings
+import faiss
+import numpy as np
+
+dimension = 384
+
+index = faiss.IndexFlatL2(dimension)
+
+vectors = np.random.random((10, dimension)).astype('float32')
+
+index.add(vectors)
+
+print(index.ntotal)
+Lab Exercise
+Lab 10 – Vector Search
+
+Tasks:
+
+Generate embeddings
+Store in FAISS
+Perform similarity search
