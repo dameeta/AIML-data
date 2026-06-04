@@ -1,0 +1,37 @@
+12. RAG Chatbot Development
+Objective
+
+Build production RAG assistant.
+
+RAG Workflow
+6
+Hands-on Notes
+Basic RAG Flow
+query = "What is AI?"
+
+retrieved_docs = [
+    "AI stands for Artificial Intelligence"
+]
+
+prompt = f"""
+Answer using context:
+
+Context:
+{retrieved_docs}
+
+Question:
+{query}
+"""
+Lab Exercise
+Lab 12 – Enterprise RAG Assistant
+
+Tasks:
+
+Load documents
+Create embeddings
+Retrieve relevant chunks
+Send context to LLM
+
+Bonus:
+
+Add Streamlit UI
