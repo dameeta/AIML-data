@@ -1,0 +1,19 @@
+11. Hybrid Search Pipeline
+Objective
+
+Combine BM25 + Vector Search.
+
+Hybrid Retrieval
+6
+Hands-on Notes
+Hybrid Scoring
+final_score = (0.5 * bm25_score) + (0.5 * semantic_score)
+Lab Exercise
+Lab 11 – Hybrid Retrieval Framework
+
+Tasks:
+
+Implement BM25
+Implement semantic search
+Combine scores
+Return ranked results
