@@ -1,0 +1,35 @@
+3. Simple Retrieval Pipeline
+Objective
+
+Build basic information retrieval system.
+
+Architecture
+6
+Hands-on Notes
+Sample Documents
+documents = [
+    "Python is a programming language",
+    "AI is transforming industries",
+    "Machine learning uses data"
+]
+Keyword Search
+query = "AI"
+
+results = [doc for doc in documents if query.lower() in doc.lower()]
+
+print(results)
+
+Lab Exercise
+
+Lab 3 – Build Mini Search Engine
+
+Tasks:
+
+Create 20 documents
+Accept user query
+Return matching documents
+
+Enhancement:
+
+Add ranking by frequency
+
