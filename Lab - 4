@@ -1,0 +1,31 @@
+4. FAQ Retrieval System
+
+Objective
+
+Build enterprise FAQ chatbot backend.
+
+Hands-on Notes
+FAQ Dataset
+faq = {
+    "What is AI?": "Artificial Intelligence",
+    "What is ML?": "Machine Learning"
+}
+Query Matching
+question = input("Ask Question: ")
+
+for q, a in faq.items():
+    if question.lower() in q.lower():
+        print(a)
+Lab Exercise
+Lab 4 – FAQ Bot
+
+Tasks:
+
+Create 50 FAQs
+Build retrieval logic
+Add similarity matching
+
+Bonus:
+
+Convert to Flask API
+
