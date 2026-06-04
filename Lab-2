@@ -1,0 +1,40 @@
+2. AI Workspace Setup
+Objective
+
+Prepare AI development workspace.
+
+Hands-on Notes
+Create Virtual Environment
+python -m venv rag_env
+
+Activate:
+
+Windows
+rag_env\Scripts\activate
+Linux/Mac
+source rag_env/bin/activate
+Install Required Packages
+pip install numpy pandas scikit-learn
+pip install sentence-transformers
+pip install faiss-cpu
+pip install openai
+pip install langchain
+pip install elasticsearch
+pip install jupyter
+Start Jupyter Notebook
+jupyter notebook
+
+Lab Exercise
+Lab 2 – Workspace Verification
+
+Create notebook:
+
+Import all libraries
+Print versions
+
+Example:
+
+import pandas as pd
+import sklearn
+print(pd.__version__)
+
