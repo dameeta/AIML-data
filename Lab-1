@@ -1,0 +1,62 @@
+1. Python & GitHub Setup
+Objective
+
+Set up the development environment for enterprise AI projects.
+
+Hands-on Notes
+Install Python
+
+Download from:
+
+Python Official Website
+
+Verify installation:
+
+python --version
+pip --version
+Install VS Code
+
+Visual Studio Code
+
+Recommended Extensions:
+
+Python
+Jupyter
+GitLens
+Pylance
+Install Git
+
+Git SCM
+
+Verify:
+
+git --version
+Create GitHub Repository
+
+GitHub
+
+Commands:
+
+git init
+git add .
+git commit -m "Initial Commit"
+git branch -M main
+git remote add origin <repo-url>
+git push -u origin main
+
+Lab Exercise
+Lab 1 – Environment Setup
+
+Tasks:
+
+Install Python
+Install VS Code
+Create GitHub repo
+Push sample Python project
+Deliverable
+
+GitHub repository with:
+
+README.md
+hello.py
+
