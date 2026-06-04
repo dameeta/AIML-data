@@ -1,0 +1,46 @@
+13. GPT-4o Integration
+Objective
+
+Integrate LLM into enterprise workflows.
+
+Hands-on Notes
+Install SDK
+pip install openai
+API Example
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_API_KEY")
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {"role":"user","content":"Explain AI"}
+    ]
+)
+
+print(response.choices[0].message.content)
+Lab Exercise
+Lab 13 – Banking AI Assistant
+
+Tasks:
+
+Build customer support assistant
+Add FAQ retrieval
+Add document retrieval
+Generate AI responses
+
+Sample Use Cases:
+
+Loan eligibility
+Account balance FAQ
+Fraud detection support
+Final Capstone Project
+Enterprise AI Search & RAG Platform
+Features
+PDF document ingestion
+NLP preprocessing
+BM25 ranking
+Vector database
+Hybrid search
+GPT-4o integration
+Chat UI
