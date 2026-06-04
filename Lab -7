@@ -1,0 +1,64 @@
+7. BM25 in Python
+Objective
+
+Implement ranking algorithms.
+
+Hands-on Notes
+
+BM25 Formula:
+
+BM25(q,d)=∑i=1 n IDF(qi)⋅f(qi,d)+k1(1−b+b avg dl ∣d∣ )f(qi,d)(k1+1)
+	​
+
+
+Install Rank-BM25
+pip install rank-bm25
+Example
+from rank_bm25 import BM25Okapi
+
+docs = [
+    "AI and machine learning",
+    "Python for data science",
+    "Deep learning applications"
+]
+
+tokenized_docs = [doc.split(" ") for doc in docs]
+
+bm25 = BM25Okapi(tokenized_docs)
+
+query = "machine learning".split(" ")
+
+scores = bm25.get_scores(query)
+
+print(scores)
+
+Lab Exercise
+Lab 7 – Ranking Engine
+
+Tasks:
+
+Create 100 documents
+Implement BM25
+Rank results
+Display top 5 matches
+8. Elasticsearch Setup
+Objective
+
+Build enterprise search platform.
+
+Hands-on Notes
+Install Docker
+
+Docker Desktop
+
+Run Elasticsearch
+
+Elasticsearch Official Site
+
+docker run -p 9200:9200 -e "discovery.type=single-node" elasticsearch:8.12.0
+Python Connection
+from elasticsearch import Elasticsearch
+
+es = Elasticsearch("http://localhost:9200")
+
+print(es.info())
