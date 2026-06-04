@@ -1,0 +1,45 @@
+5. Text Cleaning Pipeline
+
+Objective
+
+Implement NLP preprocessing.
+
+6. NLP Pipeline
+
+Hands-on Notes
+Install NLTK
+pip install nltk
+Preprocessing Example
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+text = "AI is changing the world!"
+
+tokens = word_tokenize(text)
+
+filtered = [w for w in tokens if w.lower() not in stopwords.words('english')]
+
+print(filtered)
+
+Lab Exercise
+Lab 5 – Build Text Cleaning Module
+
+Tasks:
+
+Tokenization
+Stopword removal
+Stemming
+Lemmatization
+
+Input:
+
+News articles dataset
+
+Output:
+
+Cleaned dataset CSV
+
